@@ -1,0 +1,116 @@
+<h1 class="kreep">
+    <button class="button button5"><b>omed tu cheva buy</b></button>
+  </h1>
+  
+  <h1 class="wiggle">
+    <button class="button button"><b>yan na?</b></button>
+  </div>
+
+  <style>
+  button {
+    background-color:burlywood
+    color: red;
+    border: 2px solid #666666;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: ::-webkit-validation-bubble-message;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+ 
+    border-radius:20%;
+
+    p{
+      background-color: aquamarine;
+    }
+      
+    
+}
+
+.button:hover {
+    background-color: #990e0e;
+    color: rgb(130, 21, 21);
+}
+.button:hover {
+    background-color: #581b1b;
+    color: rgb(124, 10, 10);
+}
+
+
+/*Bounce*/
+@keyframes kreep {
+    0% {-webkit-transform: scale(1.1,.9);
+        transform: scale(1.1,.9);}
+   50% { -webkit-transform: scale(.9,1.1) translateY(-.5rem)}
+   70% { -webkit-transform: scale(1);
+         transform: scale(1);}
+}
+
+h1.kreep {
+  display: inline-block;
+  /*name-duration-function(ease,eas-in,linear)-delay-count-direction */
+  animation: kreep 0.7s ease 2s infinite alternate;
+}
+
+h1.kreep:hover {
+  animation: none;
+}
+/*END BOUNCER*/
+
+/*SHAKER*/
+@keyframes wiggle {
+  2% {
+    -webkit-transform: translateX(3px) rotate(2deg);
+    transform: translateX(3px) rotate(2deg);
+  }
+  4% {
+    -webkit-transform: translateX(-3px) rotate(-2deg);
+    transform: translateX(-3px) rotate(-2deg);
+  }
+  6% {
+    -webkit-transform: translateX(3px) rotate(2deg);
+    transform: translateX(3px) rotate(2deg);
+  }
+  8% {
+    -webkit-transform: translateX(-3px) rotate(-2deg);
+    transform: translateX(-3px) rotate(-2deg);
+  }
+  10% {
+    -webkit-transform: translateX(2px) rotate(1deg);
+    transform: translateX(2px) rotate(1deg);
+  }
+  12% {
+    -webkit-transform: translateX(-2px) rotate(-1deg);
+    transform: translateX(-2px) rotate(-1deg);
+  }
+  14% {
+    -webkit-transform: translateX(2px) rotate(1deg);
+    transform: translateX(2px) rotate(1deg);
+  }
+  16% {
+    -webkit-transform: translateX(-2px) rotate(-1deg);
+    transform: translateX(-2px) rotate(-1deg);
+  }
+  18% {
+    -webkit-transform: translateX(1px) rotate(0);
+    transform: translateX(1px) rotate(0);
+  }
+  20% {
+    -webkit-transform: translateX(-1px) rotate(0);
+    transform: translateX(-1px) rotate(0);
+  }
+}
+
+h1.wiggle {
+  display: inline-block;
+  animation: wiggle 2.7s infinite;
+}
+
+h1.jumping:hover {
+  animation: none;
+}
+/*END jumping*/
+</style>
